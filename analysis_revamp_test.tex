@@ -1,0 +1,134 @@
+\documentclass[11pt, paper=a4]{scrartcl}
+
+% XeLaTeX
+\usepackage{xltxtra}
+
+% crucial packages
+% \usepackage[utf8]{inputenc}
+% \usepackage[ngerman]{babel} % latex language package
+\usepackage{polyglossia} % xelatex language package
+\setmainlanguage[spelling=new,latesthyphen=false]{german}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tabularx}
+
+% graphics
+
+
+% math
+\usepackage{amsmath} % basic ams package
+% \usepackage{amsfonts} % font support
+% \usepackage{amssymb}
+
+%math-style=ISO,bold-style=tex
+
+% theorem support (load before ref)
+\usepackage{amsthm} % theorem-environments
+\usepackage{thmtools} % extended theorem support
+
+% ref support
+\usepackage[xetex]{hyperref}
+\usepackage{cleveref}
+
+% unicode math support (load after all math packages!)
+\usepackage{unicode-math}
+
+% \KOMAoptions{DIV=14}
+
+% Font Setup
+\defaultfontfeatures{Scale=MatchUppercase}
+
+\setmainfont[Path=C:/Windows/Fonts/,
+UprightFont=LINLIBERTINE_RE-4.7.5.OTF,
+BoldFont=LINLIBERTINE_BD-4.1.5.OTF,
+ItalicFont=LINLIBERTINE_IT-4.2.6.OTF,
+BoldItalicFont=LINLIBERTINE_BI-4.1.0.OTF,
+Mapping=tex-text
+]{Linux Libertine}
+
+% \setmainfont[Mapping=tex-text]{XITS}
+
+\setsansfont[Path=C:/Windows/Fonts/,
+UprightFont=LinBiolinum_Re-0.6.4.otf,
+BoldFont=LinBiolinum_Bd-0.5.5.otf,
+ItalicFont=LinBiolinum_It-0.5.1.otf,
+Mapping=tex-text,
+Script=latn,
+Language=DEU,
+Numbers={Proportional}]{Linux Biolinum}
+
+
+
+\setmathfont{XITS Math}
+
+
+
+%= Titelseite ===========================================================================
+\begin{document}
+% \headheight15pt
+\begin{titlepage}
+\hfill
+\vspace{20mm}
+\pagenumbering{roman}
+\begin{center}
+{\LARGE \sffamily Analysis I - Vorlesungs-Script} \vskip 3em {\large Prof. Dr. Camillo De Lellis} \vskip 1.5em
+{\large Basisjahr 10 Semester II}\vspace{30mm}\\
+{\large {\bf Mitschrift:} \vspace{2mm}\\
+Simon Hafner}\vspace{5mm}\\ %30mm
+%{\large {\bf Graphics:} \vspace{2mm}\\
+%Pirmin Weigele }\vspace{30mm}\\ %30mm
+\author{Simon Hafner}
+
+\end{center}
+\vfill
+
+\end{titlepage}
+
+
+%= Inhaltsverzeichnis ==========================================================================
+% \lhead{}
+% \rhead{}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%= Vorlesung-Skripts ==========================================================================
+% \cfoot{\thepage}
+% \fancyhead[L]{\nouppercase{\leftmark}}
+\newpage
+
+%= Analysis I & & II ==========================================================================
+
+%Analysis I
+%% some math testing
+% start easy
+% \begin{equation*}
+%   a = b
+% \end{equation*}
+
+Sei $M \ne \emptyset$ eine Menge. Eine innere Verknüpfung auf $M$ ist
+eine \emph{Abbildung} $\vysmwhtcircle \mathcolon M \times M \mapsto M$.
+
+$\forall a \leq 0 \comma a \in \BbbR$ und $\forall k \in \BbbN \setminus
+\lbrace{}0\rbrace \comma \exists x > 0, x \in \BbbR$, so dass gilt
+\begin{equation}
+  \label{eq:1}
+  x^k = a.
+\end{equation}
+
+
+%\begin{definition}
+  $\forall q = \frac{m}{n} \in \BbbQ$ und $\forall q > 0$ definieren wir
+%\end{definition}
+
+Aus Gleichung \ref{eq:1} folgt xy.
+
+\newpage
+
+%= Stichwortverzeichnis ======================================================================
+% \rhead{}
+\addcontentsline{toc}{section}{Stichwortverzeichnis}
+% \printindex
+
+\end{document}
