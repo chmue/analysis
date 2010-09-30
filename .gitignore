@@ -1,0 +1,12 @@
+# ignore latex compile files
+*.aux
+*.log
+*.toc
+*.idx
+*.out
+
+# ignore emacs autosave files
+*.*~
+
+# ignore emacs config files
+auto/
